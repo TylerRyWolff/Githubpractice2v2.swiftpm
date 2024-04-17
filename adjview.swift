@@ -8,7 +8,8 @@ struct AdjectiveView: View {
         VStack {
             NavigationView {
                 NavigationLink("Go To Next Page") {
-                    SummaryView()
+                    SummaryView(madlib: madlib)
+                    TextField("slow", text: $madlib.adjective)
                 }
             }
         }

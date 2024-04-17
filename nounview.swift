@@ -7,7 +7,7 @@ struct NounView: View {
         VStack {
             NavigationView {
                 NavigationLink("Go To Next Page") {
-                    VerbView(madlib: madlib)
+                    VerbView(madlib: $madlib)
                 }
             }
         }
