@@ -7,13 +7,14 @@ struct VerbView: View {
     
     var body: some View {
         VStack {
-            NavigationView {
-                NavigationLink("Go To Next Page") {
+           
+            TextField("verb", text: $madlib.verb)
+            NavigationLink("Go To Next Page") {
                     AdjectiveView(madlib: $madlib)
                     
-                    TextField("ran", text: $madlib.verb)
+                    
                 }
-            }
+            
         }
     }
 }

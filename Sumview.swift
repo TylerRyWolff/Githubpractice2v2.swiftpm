@@ -8,7 +8,7 @@ struct SummaryView: View {
     
     var body: some View {
         VStack {
-            Text("The \(madlib.noun) \(madlib.verb) \(madlib.adjective)")
+            Text("The \(madlib.adjective) \(madlib.noun) \(madlib.verb)")
                 }
             }
         }

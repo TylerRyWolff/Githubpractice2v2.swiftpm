@@ -2,14 +2,16 @@ import SwiftUI
 
 struct NounView: View {
     
-    @State var madlib : Madlib = Madlib(noun: "String", verb: "String", adjective: "String")
+    @State var madlib : Madlib = Madlib(noun: "", verb: "", adjective: "")
     var body: some View {
         VStack {
-            NavigationView {
+            TextField("noun", text: $madlib.noun)
                 NavigationLink("Go To Next Page") {
                     VerbView(madlib: $madlib)
+                    
                 }
+                
             }
         }
     }
-}
+

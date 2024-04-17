@@ -6,11 +6,13 @@ struct AdjectiveView: View {
     
     var body: some View {
         VStack {
-            NavigationView {
+           
+            TextField("adjective", text: $madlib.adjective)
+            
                 NavigationLink("Go To Next Page") {
                     SummaryView(madlib: madlib)
-                    TextField("slow", text: $madlib.adjective)
-                }
+                   
+                
             }
         }
     }
