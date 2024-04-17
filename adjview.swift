@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Adjective: View {
+struct AdjectiveView: View {
     var body: some View {
         VStack {
             NavigationView {

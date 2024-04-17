@@ -3,23 +3,13 @@ import SwiftUI
 
 import SwiftUI
 
-struct Madlib: View {
+struct Madlib {
     
-    @State var noun = ""
-       @State var verb = ""
-        @State var adjective = ""
+    var noun : String
+    var verb : String
+    var adjective : String
     
-    var body: some View {
-        VStack {
-            NavigationView {
-                NavigationLink("Go To Next Page") {
-                    VerbView()
-                }
-            }
-        }
-    }
 }
-
     
     
 
